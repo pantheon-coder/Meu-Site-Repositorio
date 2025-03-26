@@ -1,0 +1,57 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'header__nav header__nav header__nav'
+    'section01 section01 aside01'
+    'section02 section02 aside02'
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.header__nav {
+    grid-area: header__nav;
+
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    background-color: black;
+}
+
+.header__nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.section01 {
+    grid-area: section01;
+}
+.section02 {
+    grid-area: section02;
+}
+
+.aside01 {
+    grid-area: aside01;
+
+}
+.aside02 {
+    grid-area: aside02;
+
+}
+
+.footer{
+    grid-area: footer;
+    background-color: dodgerblue;
+}
+
+.dialog{
+    background-color: silver;
+}
