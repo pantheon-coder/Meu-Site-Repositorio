@@ -1,57 +1,73 @@
 body {
-    display: grid;
-    grid-template-areas: 
-    'header header header'
-    'header__nav header__nav header__nav'
-    'section01 section01 aside01'
-    'section02 section02 aside02'
-    ;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    background-color: rgb(224, 224, 224);
 }
 .header {
-    grid-area: header;
     text-align: center;
+    background-color: white;
 }
 
-.header__nav {
-    grid-area: header__nav;
-
+.nav{
+    display: flex;
+    flex-direction: row;
 }
 
-.header__nav a {
+.nav a {
+    flex: 1;
+    display: flex;
     text-decoration: none;
     color: white;
-    align-items: center;
     background-color: black;
+    justify-content: center;
+
 }
 
-.header__nav a:hover{
+.nav a:hover{
     background-color: white;
     color: black;
 }
 
-.section01 {
-    grid-area: section01;
+.article--socialmedia a{
+    text-decoration: none;
+    color: black;
 }
-.section02 {
-    grid-area: section02;
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 20px;
 }
 
-.aside01 {
-    grid-area: aside01;
-
-}
-.aside02 {
-    grid-area: aside02;
-
+.article {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
-.footer{
-    grid-area: footer;
-    background-color: dodgerblue;
+.section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .dialog{
     background-color: silver;
+    height: 100px;
+    margin: 5px;
+}
+
+.footer{
+    text-align: center;
+    background-color: white;
+}
+.section--contact{
+    
 }
